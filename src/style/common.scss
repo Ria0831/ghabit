@@ -1,0 +1,20 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul,li,p{list-style-type: none;margin:0;padding:0;}
+
+.overtext{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis; 
+}
+.marinLeft10{
+    margin-left:10px;
+}
+.clearfloat{
+    clear: both;
+}
+.floatLeft{float: left;}
+.floatRight{float: right;}

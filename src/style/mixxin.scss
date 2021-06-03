@@ -1,0 +1,27 @@
+$defaultColor: #F5F5F5;
+$darkColor: #696969;
+$mainColor: #498428;
+$secColor:#80b155;
+$thiColor:#c1d95c;
+$forColor:#eaef9d;
+@mixin  bimg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@mixin flexcenter {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin abCenter($top, $left) {
+    position: absolute;
+    top:$top;
+    left:$left;
+}
+@mixin iconSize($width,$height) {
+    width: $width;
+    height: $height;
+}
