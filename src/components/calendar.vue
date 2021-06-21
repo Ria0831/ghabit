@@ -100,9 +100,12 @@ export default class calendar extends Vue {
         done()
     }
 
-    initDate(){
-        let start = this.getBeforeDate(this.currentDay.fulldate,this.currentDay.weekdays,'before')
-        let end = this.getBeforeDate(this.currentDay.fulldate,(6-this.currentDay.weekdays),'after')
+    initDate(date?: string){
+        if(!date){
+            date = this.getYMD(new Date())
+        }
+        let start = this.getBeforeDate(date,this.currentDay.weekdays,'before')
+        let end = this.getBeforeDate(date,(6-this.currentDay.weekdays),'after')
         this.allFullDate = this.getDays(start,end)
     }
     beforeWeek(done: Function){
